@@ -1,5 +1,5 @@
-- 👋 Hi, I’m @dasunpls
-- 👀 I’m interested in data analysis.
-- 🌱 I’m currently perfecting my SQL and Tableau skills.
-- 💞️ I’m looking to collaborate on business analytics based projects.
-- 📫 You can reach me at dsieger1749@gmail.com
+**SQL**
+
+Dawson Sieger SQL Portfolio
+
+Welcome to my SQL portfolio! This code repository contains examples of SQL I've written. Feel free to take a look and reach out to dsieger1749@gmail.com if you have any questions.
