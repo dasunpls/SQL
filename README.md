@@ -1,6 +1,4 @@
-### **SQL**
-
-<br />
+# **SQL**
 
 Dawson Sieger SQL Portfolio
 
