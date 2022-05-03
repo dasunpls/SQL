@@ -1,0 +1,27 @@
+CREATE TABLE singers (id INTEGER PRIMARY KEY, name TEXT, age INTEGER, home_state TEXT);
+
+INSERT INTO singers (name, age, home_state) VALUES ("Tilian Pearson", 34, "Florida");
+INSERT INTO singers (name, age, home_state) VALUES ("Jason Derulo", 32, "Florida");
+INSERT INTO singers (name, age, home_state) VALUES ("Ariana Grande", 28, "Florida");
+INSERT INTO singers (name, age, home_state) VALUES ("Taylor Swift", 32, "Pennsylvania");
+INSERT INTO singers (name, age, home_state) VALUES ("Pink", 42, "Pennsylvania");
+INSERT INTO singers (name, age, home_state)
+VALUES ("Lzzy Hale", 38, "Pennsylvania");
+INSERT INTO singers (name, age, home_state) VALUES ("Marilyn Manson", 53, "Ohio");
+INSERT INTO singers (name, age, home_state) VALUES ("Tyler Joseph", 33, "Ohio");
+INSERT INTO singers (name, age, home_state) VALUES ("John Legend", 43, "Ohio");
+
+CREATE TABLE songs (singer_id INTEGER, title TEXT, genre TEXT);
+INSERT INTO songs VALUES (1, "Dose", "Alternative");
+INSERT INTO songs VALUES (2, "Wiggle", "Pop");
+INSERT INTO songs VALUES (3, "34 35", "Pop");
+INSERT INTO songs VALUES (4, "You Belong With Me", "Pop");
+INSERT INTO songs VAlUES (5, "So What", "Alternative");
+INSERT INTO songs VALUES (6, "I Miss the Missery", "Metal");
+INSERT INTO songs VALUES (7, "The Beautiful People", "Metal");
+INSERT INTO songs VALUES (8, "Stressed Out", "Rock");
+INSERT INTO songs VALUES (9, "All of Me", "R&B");
+
+SELECT singers.name, singers.home_state, songs.title AS song_title, songs.genre AS song_genre FROM singers JOIN songs ON singers.id = songs.singer_id;
+
+SELECT singers.name, singers.home_state, songs.genre FROM singers JOIN songs ON singers.id = songs.singer_id WHERE songs.genre = "Pop" ORDER BY singers.name;
