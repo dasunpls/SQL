@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @dasunpls
+- 👀 I’m interested in data analysis.
+- 🌱 I’m currently perfecting my SQL and Tableau skills.
+- 💞️ I’m looking to collaborate on business analytics based projects.
+- 📫 You can reach me at dsieger1749@gmail.com
