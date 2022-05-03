@@ -1,0 +1,18 @@
+CREATE TABLE league_profile (id INTEGER PRIMARY KEY, username TEXT, tier TEXT, division INTEGER);
+
+INSERT INTO league_profile (username, tier, division) VALUES ("dasunpls", "Platinum", 2);
+INSERT INTO league_profile (username, tier, division) VALUES ("roxz", "Platinum", 3);
+INSERT INTO league_profile (username) VALUES ("abh_th0tmetics");
+
+SELECT * FROM league_profile;
+
+DELETE FROM league_profile WHERE id = 3;
+
+SELECT * FROM league_profile;
+
+/* RANK UP */
+
+UPDATE league_profile SET division = 1 WHERE id = 1;
+UPDATE league_profile SET division = 2 WHERE id = 2;
+
+SELECT * FROM league_profile;
